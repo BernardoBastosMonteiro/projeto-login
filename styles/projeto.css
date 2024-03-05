@@ -14,9 +14,9 @@
     
 }
 .header-block img{
-    margin: 100px;
-    width: 100px;
-    height: 30px;
+    margin: 70px;
+    width: 70px;
+    height: 80px;
     
 }
 
@@ -26,8 +26,70 @@
 }
 
 .header-block button{
-    width: 50%;
-    margin-right: 50px;
+    margin-left: 22%;
+    width: 30%;
+    height: 12%;
+    margin-right: 30px;
+    background-color: #fff;
+    border: 1px solid #282828;
+    color: black;
+    column-gap: 10px;
 
 }
+#quem-somos {
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 40px; 
+    animation: aparecer 3s;
+}
+
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#quem-somos h2 {
+    margin-bottom: 50px; 
+}
+
+#quem-somos div {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); 
+   
+
+
+}
+
+#quem-somos img {
+    width: 100%; 
+    height: 100%; 
+
+    
+}
+
+#quem-somos div {
+    padding: 250px; 
+}
+
+#quem-somos p {
+    font-size: 16px; 
+    line-height: 1.5; 
+    color: #666; 
+}
+
+#quem-somos div p:last-child {
+    margin-bottom: 0; 
+}
+    
+
+    
 
