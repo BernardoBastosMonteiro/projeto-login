@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/ca900a5c2d.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    
     <div class="conteiner">
-        <p>Login:</p>
-        <input id="Login" type="text" placeholder="Usuario">
+        <p><i class="fa-solid fa-user"></i> LOGIN:</p>
         <br>
-        <p>Senha:</p>
-        <input id="Senha" type="text" placeholder="Senha">
+        <input id="Login" type="text" placeholder="insira seu usuario">
+        <br>
+        <p><i class="fa-solid fa-lock"></i> SENHA:</p>
+        <br>
+        <input id="Senha" type="text" placeholder="insira sua senha">
         <br>
         <button onclick="login(); return false" class="result">Login</button>
     </div>
+
     <script src="./js/login.JS"></script>
     
 </body>
