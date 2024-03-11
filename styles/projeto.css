@@ -4,7 +4,7 @@
 }
 
 header{
-    background-color: #e24040;
+    background-color: #1b0e8d;
     color: #fff;
     width: 100vw;
     height: 20vh;
@@ -16,14 +16,16 @@ header nav{
 }
 
 @media screen and (min-width: 300px) {
-  
+
+    
     .links-block{
         width: 100%;
         height: 50%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        align-content: center;
+        align-items: center;
     }
+    
     .links-block a{
         margin: 20px;
     }
@@ -35,7 +37,7 @@ header nav{
         flex-direction: column;
         align-items: center;
     }
-
+    
     .search-bar input{
         width: 80vw;
         height: 50%;
@@ -43,21 +45,19 @@ header nav{
         margin-right: 0;
         border: none;
         padding-left: 20px;
-        
     }
+    
     nav a{
         text-decoration: none;
         color: #fff;
     }
-    
+
     .search{
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
-        
-        
     }
 
     .search button{
@@ -66,47 +66,87 @@ header nav{
         margin-right: 10px;
         border: none;
         background-color: #fff;
-    }
+    }    
 
     .links{
         display: flex;
         flex-direction: row;
-        
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .links-block{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
- 
-        
+    .search-bar {
+        display: flex;
+        flex-direction: column;
     }
-    @media screen and(min-width: 768px) {
-        .links-block{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
 
-        .search-bar{
-            display: flex;
-            flex-direction: column;
+    .search{
+        display: flex;
+        justify-content: center;
+    }
 
-        }
+    .search input{
+        width: 50vw;
+        justify-content: center;
+    }
 
-        .search{
-            display: flex;
-            justify-content: center;
-        }
+    .search button{
+        width: 5vw;
+    }
 
-        .search input{
-            width: 50vw;
-            justify-content: center;
-        }
+    .links-block #menu{
+        display: none;
+    }
 
-        .search button{
-            width: 5vw;
-        }
-        .links-block #menu{
-            display: none;
-        }
-        
+    .items-container{
+        width: 100vw;
+        height: 10vh;
+        background-color: #1b0e8d;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .items-container i{
+        margin: 10px;
     }
     
+    .carousel-item img{
+        width: 100vw;
+        height: 30vh; 
+    }
+    
+    #carouselExempleindicators{
+        width: 100%;
+        height: 40%;
+    }
+    
+    .title{
+        display: flex;
+        justify-content: center;
+    }
 
+    #card{
+        padding: 40px;
+        width: 100vw;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    
+
+    .produtos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
